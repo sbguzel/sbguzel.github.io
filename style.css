@@ -1,0 +1,170 @@
+/* Temel Sıfırlama ve Font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Siyaha yakın koyu gri arka plan */
+    color: #E0E0E0; /* Açık renkli genel yazı */
+}
+
+/* Vurgu Rengi Tanımı */
+:root {
+    --theme-color: #01342B; /* Belirlenen koyu camgöbeği/yeşilimsi mavi */
+    --hover-color: #025642; /* Temanın biraz daha koyu hali */
+    --card-bg: #1E1E1E; /* Kartlar için koyu arka plan */
+    --light-text: #F0F0F0; /* Açık ana yazı */
+    --sub-text: #B0B0B0; /* Alt yazı/detaylar için */
+}
+
+
+/* Navigasyon */
+.navbar {
+    background-color: var(--theme-color);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-link {
+    color: var(--light-text);
+    text-decoration: none;
+    padding: 15px 25px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.nav-link:hover {
+    background-color: var(--hover-color);
+}
+
+/* İçerik Alanı */
+.content-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+/* Başlık ve Profil Kartı */
+.header-card {
+    background-color: var(--card-bg); /* Koyu kart arka planı */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.header-card h1 {
+    color: var(--light-text); /* Başlık yazısı açık */
+    margin-top: 0;
+    font-size: 2.1em;
+}
+
+.header-card h2 {
+    color: var(--sub-text);
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.header-card p {
+    font-size: 1.1em;
+    color: var(--sub-text); /* Açık gri alt yazı */
+    line-height: 1.6;
+}
+.header-card a {
+    color: var(--sub-text);
+}
+
+
+/* Bölümler (İş Deneyimi, Eğitim vb.) */
+.section-title {
+    color: var(--light-text);
+    border-bottom: 3px solid var(--theme-color);
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.card {
+    background-color: var(--card-bg); /* Koyu kart arka planı */
+    border-left: 5px solid var(--theme-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card h3 {
+    color: var(--light-text); /* İş adı açık renk */
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    color: var(--sub-text); /* Kurum adı açık gri */
+    margin: 0 0 10px 0;
+    font-weight: normal;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--sub-text);
+}
+
+.card li strong {
+    color: var(--light-text); /* Maddedeki önemli kelimeler vurgulu */
+}
+
+/* Minimalist Beceriler (Skills) */
+.skills-card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.skills-card h3 {
+    color: var(--light-text);
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333; /* Koyu temada daha az belirgin çizgi */
+    padding-bottom: 5px;
+}
+
+.minimal-skills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    margin-bottom: 20px;
+}
+
+.minimal-skills li {
+    font-size: 1.05em;
+    color: var(--sub-text);
+    position: relative;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.minimal-skills li::before {
+    content: '•';
+    color: var(--light-text);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Ek Bilgiler - Dark Mode */
+.card div strong {
+    color: var(--light-text);
+}
