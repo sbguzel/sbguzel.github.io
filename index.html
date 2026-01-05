@@ -1,20 +1,488 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Said Burak Güzel - Mekatronik Mühendisi</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Said Burak Güzel</title>
+
+  <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"> -->
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <nav class="navbar">
-        <a href="index.html" class="nav-link">Ana Sayfa</a>
-        <a href="about.html" class="nav-link">Hakkımda</a>
-    </nav>
+  <main>
 
-    <div class="content-container">
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <img src="./assets/images/cv_image.png" alt="Said Burak Güzel" width="125">
+
+        <div class="info-content">
+          <h1 class="name" title="Said Burak Güzel">Said Burak Güzel</h1>
+
+          <p class="title">Mekatronik Mühendisi</p>
         </div>
 
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>İletişim Bilgileri</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:saidburakguzel@gmail.com" class="contact-link">saidburakguzel@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Konum</p>
+
+              <address>Pendik, İstanbul, Türkiye</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <div class="main-content">
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>Hakkımda</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portföy</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <article class="about active" data-page="hakkımda">
+
+        <header>
+          <h2 class="h2 article-title">Hakkımda</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Dinamik sistemlerin matematiksel modellemesi, hassas kontrol ve füzyon algoritmalarının
+            tasarımı, simülasyon ve optimizasyon konularında uzmanlaşmış yetkin mühendisim.
+          </p>
+        </section>
+
+        <header>
+          <h2 class="h2 article-title">Özgeçmiş</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Eğitim</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Gebze Teknik Üniversitesi</h4>
+
+              <span>2026 — devam ediyor</span>
+
+              <p class="timeline-text">
+                Makine Mühendisliği Yüksek Lisans Derecesi
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Yıldız Teknik Üniversitesi</h4>
+
+              <span>2016 — 2021</span>
+
+              <p class="timeline-text">
+                Mekatronik Mühendisliği Lisans Derecesi, AGNO: 2.81/4.00
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Deneyim</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mekatronik Mühendisi</h4>
+
+              <span>2023 — devam ediyor</span>
+
+              <p class="timeline-text">
+                Sanlab (Tam Zamanlı), İstanbul
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Serbest Mekatronik Mühendisi</h4>
+
+              <span>2022 — 2023</span>
+
+              <p class="timeline-text">
+                Exclusive Garaj (Proje Bazlı), İstanbul
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kurucu Ortak / Ar-Ge Mühendisi</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                4X Arge (Teknokent Girişimi), İstanbul
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Araştırmacı / Gönüllü</h4>
+
+              <span>2018 — 2021</span>
+
+              <p class="timeline-text">
+                Simulab (Üniversite Laboratuvarı), İstanbul
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Yeteneklerim</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Algoritmik Düşünme</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Matematiksel Modelleme</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Tahminci & Kontrol sistemleri</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Simülasyon & Dijital İkiz</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Optimizasyon</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Otomasyon</h5>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <article class="portfolio" data-page="portföy">
+
+        <header>
+          <h2 class="h2 article-title">Portföy</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Hepsi</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Ürünler</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Projeler</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Hobi</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Hepsi</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Ürünler</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Projeler</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Hobi</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="ürünler">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/rex_9.png" alt="r-ex" loading="lazy">
+                </figure>
+
+                <h3 class="h4 project-title">R-EX</h3>
+
+                <p class="project-category">Ürünler</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="projeler">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="youtube" loading="lazy">
+                </figure>
+
+                <h4 class="h4 project-title">Youtube Kanalı</h4>
+
+                <p class="project-category">Projeler</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="hobi">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="photovideo" loading="lazy">
+                </figure>
+
+                <h4 class="h4 project-title">Fotoğrafçılık ve Video</h4>
+
+                <p class="project-category">Hobi</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Sensör Füzyonu</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-01-05">5 Ocak, 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Madgwick Algoritması</h3>
+
+                  <p class="blog-text">
+                    IMU ivme ve jiroskop verilerini kullanarak gürbüz durum tahmincisi nasıl tasarlanır.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <footer class="footer">
+    <p>
+      Website made using <a href="https://github.com/codewithsadee/vcard-personal-portfolio">vcard-personal-portfolio template</a> 
+    </p>
+  </footer>
+
 </body>
+
 </html>
